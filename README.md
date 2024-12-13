@@ -29,36 +29,36 @@ To use this repository, ensure you have the following installed:
    az login
    ```
 
-3. **Initialize Terraform**
+4. **Initialize Terraform**
    Initialize Terraform to download necessary provider plugins:
    ```bash
    terraform init
    ```
 
-4. **Review Variables**
+5. **Review Variables**
    Open the `variables.tfvars` file and update the variable values as needed. If you don't provide this file, you will be asked to enter the values from the command line while running.
 
-5. **Plan the Deployment**
+6. **Plan the Deployment**
    Generate an execution plan to review changes before applying them:
    ```bash
    terraform plan -var-file="variables.tfvars"
    ```
 
-6. **Apply the Configuration**
+7. **Apply the Configuration**
    Apply the Terraform configuration to create the resources:
    ```bash
    terraform apply -var-file="variables.tfvars"
    ```
    Confirm the prompt by typing `yes`.
 
-7. **Verify the Resources**
+8. **Verify the Resources**
    Use the Azure Portal or Azure CLI to verify the creation of the resources.
 
 ## Files Overview
 
 - **`main.tf`**: Contains the primary configuration for creating Azure resources.
 - **`variables.tf`**: Defines input variables for customization.
-- Module folder has the same structure for each resource separately
+- Module folder has the same structure for each resource separately.
 
 ## Cleanup
 
